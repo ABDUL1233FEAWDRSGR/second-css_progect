@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    height: 70px;
+    background: black;
+    width: 80%;
+    left: 200px;
+    font-size: larger;
+    top: 15px;
+    color: rgb(212, 138, 47);
+    
+}
+main{
+    display: grid;
+    row-gap: 30px;
+    width: 80px;
+    padding: 30px;
+    margin-left: 170px;
+    margin-top: 40px;
+    grid-template-areas: 
+    "order payment"
+    "totals totals"
+    ;
+    grid-template-columns: 1fr 1fr;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: #efefef;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.order{
+    grid-area: order;
+    background: #eee1d1;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 500px;
+    margin-top: 30px;
+}
+.payment{
+    grid-area: payment;
+    position: relative;
+    margin-left: 70px;
+    width: 500px;
+}
+.totals{
+    grid-area: totals;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.totals-table td {
+    padding: 10px 40px;
+}
+.items{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.item{
+    border-bottom: 3px solid #DDB892;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas: 
+    "quantity name price"
+    "quantity options price";
+    padding: 10px 0;
+    row-gap: 10px;
+}
+.item:last-child{
+border-bottom: none;
+}
+.quantity{
+    grid-area: quantity;
+}
+.name{
+    grid-area: name;
+    font-weight: bolder;
+}
+.price{
+    grid-area: price;
+    font-weight: bold;
+}
+.options{
+    grid-area: options;
+}
+.options-list{
+    list-style: none;
+    color: #b0896b;
+}
+.payment-box{
+    position: relative;
+    margin-top: 70px;
+    background:#eee1d1;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px;
+    padding: 1px 15px ;
+    margin-bottom: 20px;
+    
+    
+}
+.name-box{
+    position: relative;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px;
+    padding:1px 15px;
+    margin-bottom: 20px;
+    background:#eee1d1;
+    padding-bottom: 20px;
+
+}
+.input-label{
+    position: absolute;
+    color: rgb(202, 77, 102);
+    background-color:#eee1d1;
+    padding: 0 10px;
+    left: 35px;
+    top: 60px;
+    font-size: 20px;
+    
+    
+}
+.user-input{
+    color: #885a2d;
+    background: #eee1d5;
+    border-radius: 20px;
+    min-height: 50px;
+    font-size: larger;
+    font-style: oblique;
+    font-weight: bold;
+    width: 80%;
+    border: 1px solid rgb(202, 77, 102);
+    caret-color: red;
+}
+.input-label2{
+    position: absolute;
+    color: rgb(202, 77, 102);
+    background-color:#eee1d1;
+    padding: 0 10px;
+    left: 35px;
+    top:130px;
+    font-size: 20px;
+}
+.user-input2{
+    color: #885a2d;
+    background: #eee1d5;
+    margin-top: 20px;
+    border-radius: 20px;
+    min-height: 50px;
+    font-size: larger;
+    font-style: oblique;
+    font-weight: bold;
+    border: 1px solid rgb(202, 77, 102);
+    caret-color: red;
+    
+}
+button{
+    position: relative;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 20px;
+    background: #f07f0e;
+    margin-top: 20px;
+    width: 900px;
+    margin-left: 45px;
+    height: 60px;
+    cursor: pointer;
+    
+    
+}
+
+footer{
+    width: 100px;
+}
+
+
+
+
+
+
+
+
